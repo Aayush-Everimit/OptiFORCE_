@@ -137,16 +137,6 @@ COS Engine simulates multiple staffing options and recommends the most efficient
 
 ---
 
-## 10. Hackathon Pitch Strategy
-
-1. Introduce the problem: inefficiencies in workforce allocation.  
-2. Demo live dashboard: employee metrics, staffing recommendations, cost optimization.  
-3. Share a story demonstrating project optimization.  
-4. Highlight AI-driven recommendation and optimization.  
-5. Conclude with measurable impact: cost reduction and productivity improvement.
-
----
-
 ## 11. Monetization / Startup Model
 
 - **SaaS pricing per employee/month**  
