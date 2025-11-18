@@ -17,7 +17,6 @@ public class EmployeeService {
     private final AssignmentRepository assignmentRepository;
     private final TaskLogRepository taskLogRepository; // Added dependency
 
-    // Constructor Injection
     public EmployeeService(
             EmployeeRepository employeeRepository,
             AssignmentRepository assignmentRepository,
@@ -52,40 +51,26 @@ public class EmployeeService {
     }
     @Transactional
     public void updateEmployeeScores(String employeeId, Double liveProductivityScore, Double overloadIndex) {
-        // 1. Find the Employee using the unique business ID
         Employee employee = employeeRepository.findByEmployeeId(employeeId)
                 .orElseThrow(() -> new IllegalArgumentException("Employee not found with unique ID: " + employeeId));
 
-        // 2. USE THE PARAMETERS to update the entity fields
         employee.setLiveProductivityScore(liveProductivityScore);
         employee.setOverloadIndex(overloadIndex);
 
-        // 3. Save the updated entity
         employeeRepository.save(employee);
     }
 
-    // --- Business Logic ---
-
-    /**
-     * Calculates the employee's current resource availability based on mandatory hours and current assignments.
-     * This uses the custom JpaRepository method defined previously.
-     */
     public Double calculateAvailability(Long employeeId) {
         Employee employee = retrieveEmployeeById(employeeId);
         Double mandatoryHours = employee.getMandatoryWorkHours();
 
-        // 1. Fetch current total assigned hours (using the custom Repository method)
         Double assignedHours = assignmentRepository.sumOptimizedAssignedHoursByEmployee(employee);
 
-        // Handle null/zero hour scenarios
         if (mandatoryHours == null || mandatoryHours <= 0) return 0.0;
         if (assignedHours == null) assignedHours = 0.0;
 
-        // 2. Calculate (Mandatory - Assigned) / Mandatory
         double availability = ((mandatoryHours - assignedHours) / mandatoryHours) * 100.0;
 
-        // Ensure availability is not reported as negative (i.e., overloaded should show 0% available)
-        //
         return Math.max(0.0, availability);
     }
 }

@@ -9,7 +9,6 @@ import org.springframework.web.bind.annotation.RequestBody;
 
 import java.util.List;
 
-// The 'name' is for Spring's internal mapping; 'url' is set in application.yml
 @FeignClient(name = "cos-engine", url = "${ai.service.optimization-url}")
 public interface CosEngineClient {
     @PostMapping("/optimize")
