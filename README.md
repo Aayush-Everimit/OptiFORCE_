@@ -1,9 +1,9 @@
 # OptiForce: AI Workforce Management, Hiring, and Optimization Platform
 
 ## Ingenious Minds Behind This Project
-- [AI Specialist Name-Dev Verma and Mayank Choubey]
-- [Frontend Developer Name- Anmol Upadhyay and Yuvika Juneja]
-- [Backend Developer Name- Aayush Gautam]
+- [AI Specialists-Dev Verma and Mayank Choubey]
+- [Frontend Developers- Anmol Upadhyay and Yuvika Juneja]
+- [Backend Developer- Aayush Gautam]
 
 
 ## 1. Concept
