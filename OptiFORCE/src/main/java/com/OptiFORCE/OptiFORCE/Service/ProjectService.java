@@ -4,9 +4,10 @@ import com.OptiFORCE.OptiFORCE.Entity.Assignment;
 import com.OptiFORCE.OptiFORCE.Entity.Employee;
 import com.OptiFORCE.OptiFORCE.Entity.Project;
 import com.OptiFORCE.OptiFORCE.Repository.ProjectRepository;
+import com.OptiFORCE.OptiFORCE.integration.CosEngineClient;
+import com.OptiFORCE.OptiFORCE.dto.OptimizationRequest;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-import com.OptiFORCE.OptiFORCE.integration.CosEngineClient;
 
 import java.util.List;
 
@@ -48,7 +49,9 @@ public class ProjectService {
     public List<Assignment> triggerOptimization(Long projectId) {
         Project project = getProjectById(projectId);
         List<Employee> allEmployees = employeeService.getAllEmployeesForOptimization();
-        List<Assignment> assignments = cosEngineClient.runOptimization(project, allEmployees);
+
+        OptimizationRequest request = new OptimizationRequest(project, allEmployees);
+        List<Assignment> assignments = cosEngineClient.runOptimization(request); // Method signature changed
 
         if (assignments.isEmpty()) {
             throw new RuntimeException("Optimization engine returned no assignments.");
@@ -57,8 +60,10 @@ public class ProjectService {
         assignmentService.saveAssignmentsAndUpdateProjectCost(project, assignments);
         return assignments;
     }
+
+
     public List<Assignment> getProjectAssignments(Long projectId) {
-        Project project = getProjectById(projectId);
+        getProjectById(projectId);
         return assignmentService.getAssignmentsByProject(projectId);
     }
 }
