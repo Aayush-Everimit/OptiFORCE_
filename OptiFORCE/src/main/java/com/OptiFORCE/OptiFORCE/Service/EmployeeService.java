@@ -36,4 +36,9 @@ public class EmployeeService
 
     public void updateEmployeeScores(String employeeId, Double liveProductivityScore, Double overloadIndex) {
     }
+
+    public List<Employee> getAllEmployeesForOptimization() {
+        employeeRepository.findAll();
+        return employeeRepository.findAll();
+    }
 }
