@@ -1,7 +1,7 @@
 package com.OptiFORCE.OptiFORCE.integration;
 
 import com.OptiFORCE.OptiFORCE.Entity.Assignment;
-import com.OptiFORCE.OptiFORCE.dto.OptimizationRequest; // <-- NEW IMPORT
+import com.OptiFORCE.OptiFORCE.dto.OptimizationRequest;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -12,6 +12,5 @@ import java.util.List;
 public interface CosEngineClient {
 
     @PostMapping("/optimize")
-        // FIX: Only ONE @RequestBody is allowed. We send the DTO that contains both entities.
     List<Assignment> runOptimization(@RequestBody OptimizationRequest request);
 }

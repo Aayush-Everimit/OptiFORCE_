@@ -8,6 +8,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.Optional;
 
 @RestController
 @RequestMapping("/api/employees")
@@ -21,8 +22,8 @@ public class EmployeeController {
 
     @PostMapping
     public ResponseEntity<Employee> onboardEmployee(@RequestBody Employee employee) {
-        Employee onboardedEmployee = employeeService.saveEmployee(employee);
-        return ResponseEntity.status(HttpStatus.CREATED).body(onboardedEmployee);
+        Employee saved = employeeService.saveEmployee(employee);
+        return ResponseEntity.status(HttpStatus.CREATED).body(saved);
     }
 
     @GetMapping
@@ -31,8 +32,8 @@ public class EmployeeController {
     }
 
     @GetMapping("/{id}")
-    public Employee retrieveEmployeeById(@PathVariable Long id) {
-        return employeeService.retrieveEmployeeById(id);
+    public Optional<Employee> retrieveEmployeeById(@PathVariable String id) {
+        return employeeService.findByEmployeeId(id);
     }
 
     @PostMapping("/task-logs")

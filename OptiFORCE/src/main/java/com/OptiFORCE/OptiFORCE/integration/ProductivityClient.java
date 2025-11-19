@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 
 import java.util.List;
+
 @FeignClient(name = "productivity-ai", url = "${ai.service.productivity-url}")
 public interface ProductivityClient {
 

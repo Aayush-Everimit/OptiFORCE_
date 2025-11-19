@@ -11,9 +11,9 @@ import java.time.LocalDate;
 @Entity
 @Getter
 @Setter
-@Table(name = "projects")
 @NoArgsConstructor
 @AllArgsConstructor
+@Table(name = "projects")
 public class Project {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

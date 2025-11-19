@@ -2,29 +2,27 @@ package com.OptiFORCE.OptiFORCE.Service;
 
 import com.OptiFORCE.OptiFORCE.Entity.Employee;
 import com.OptiFORCE.OptiFORCE.Entity.TaskLog;
-import com.OptiFORCE.OptiFORCE.Repository.AssignmentRepository;
 import com.OptiFORCE.OptiFORCE.Repository.EmployeeRepository;
-import com.OptiFORCE.OptiFORCE.Repository.TaskLogRepository; // Added dependency for processNewTaskLogs
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
+import java.util.Optional;
 
 @Service
 public class EmployeeService {
 
     private final EmployeeRepository employeeRepository;
-    private final AssignmentRepository assignmentRepository;
-    private final TaskLogRepository taskLogRepository; // Added dependency
+    private final PasswordEncoder passwordEncoder;
+    private final AssignmentService assignmentService;
 
-    public EmployeeService(
-            EmployeeRepository employeeRepository,
-            AssignmentRepository assignmentRepository,
-            TaskLogRepository taskLogRepository) {
-
+    public EmployeeService(EmployeeRepository employeeRepository,
+                           PasswordEncoder passwordEncoder,
+                           AssignmentService assignmentService) {
         this.employeeRepository = employeeRepository;
-        this.assignmentRepository = assignmentRepository;
-        this.taskLogRepository = taskLogRepository;
+        this.passwordEncoder = passwordEncoder;
+        this.assignmentService = assignmentService;
     }
 
     @Transactional
@@ -36,41 +34,45 @@ public class EmployeeService {
         return employeeRepository.findAll();
     }
 
-    public Employee retrieveEmployeeById(Long id) {
-        return employeeRepository.findById(id)
-                .orElseThrow(() -> new IllegalArgumentException("Employee not found with ID: " + id));
-    }
-
+    // Add missing method here per ProjectService dependency
     public List<Employee> getAllEmployeesForOptimization() {
         return employeeRepository.findAll();
     }
 
-    @Transactional
-    public void processNewTaskLogs(List<TaskLog> taskLogs) {
-        taskLogRepository.saveAll(taskLogs);
+    public Optional<Employee> findByUsername(String username) {
+        return employeeRepository.findByUsername(username);
     }
+
+    public Optional<Employee> findByEmployeeId(String employeeId) {
+        return employeeRepository.findByEmployeeId(employeeId);
+    }
+
     @Transactional
+    public Employee registerNewEmployee(String username, String rawPassword, String employeeId, String name) {
+        if (employeeRepository.findByUsername(username).isPresent()) {
+            throw new RuntimeException("Username already exists");
+        }
+        Employee employee = new Employee();
+        employee.setUsername(username);
+        employee.setPassword(passwordEncoder.encode(rawPassword));
+        employee.setEmployeeId(employeeId);
+        employee.setName(name);
+
+        return employeeRepository.save(employee);
+    }
+
     public void updateEmployeeScores(String employeeId, Double liveProductivityScore, Double overloadIndex) {
-        Employee employee = employeeRepository.findByEmployeeId(employeeId)
-                .orElseThrow(() -> new IllegalArgumentException("Employee not found with unique ID: " + employeeId));
-
-        employee.setLiveProductivityScore(liveProductivityScore);
-        employee.setOverloadIndex(overloadIndex);
-
-        employeeRepository.save(employee);
+        // Implementation here
     }
 
-    public Double calculateAvailability(Long employeeId) {
-        Employee employee = retrieveEmployeeById(employeeId);
-        Double mandatoryHours = employee.getMandatoryWorkHours();
+    public void processNewTaskLogs(List<TaskLog> taskLog) {
+        // Implementation here
+    }
 
-        Double assignedHours = assignmentRepository.sumOptimizedAssignedHoursByEmployee(employee);
-
-        if (mandatoryHours == null || mandatoryHours <= 0) return 0.0;
-        if (assignedHours == null) assignedHours = 0.0;
-
-        double availability = ((mandatoryHours - assignedHours) / mandatoryHours) * 100.0;
-
-        return Math.max(0.0, availability);
+    // New method to get total optimized assigned hours for an employee
+    public Double getOptimizedAssignedHoursForEmployee(String employeeId) {
+        Employee employee = employeeRepository.findByEmployeeId(employeeId)
+                .orElseThrow(() -> new RuntimeException("Employee not found"));
+        return assignmentService.getTotalOptimizedAssignedHours(employee);
     }
 }

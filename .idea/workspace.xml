@@ -5,26 +5,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4b89a436-4fe1-42fc-975d-e52affab77e0" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OptiFORCE-client/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/OptiFORCE-client/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OptiFORCE-client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/OptiFORCE-client/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OptiFORCE-client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/OptiFORCE-client/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OptiFORCE-client/public/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OptiFORCE-client/public/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OptiFORCE-client/public/logo192.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OptiFORCE-client/public/logo512.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OptiFORCE-client/public/manifest.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OptiFORCE-client/public/robots.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OptiFORCE-client/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/OptiFORCE-client/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OptiFORCE-client/src/App.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OptiFORCE-client/src/App.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OptiFORCE-client/src/App.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OptiFORCE-client/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/OptiFORCE-client/src/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OptiFORCE-client/src/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OptiFORCE-client/src/logo.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OptiFORCE-client/src/reportWebVitals.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OptiFORCE-client/src/setupTests.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/OptiFORCE/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/OptiFORCE/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OptiFORCE/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/OptiFORCE/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OptiFORCE/src/main/java/com/OptiFORCE/OptiFORCE/Controller/EmployeeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/OptiFORCE/src/main/java/com/OptiFORCE/OptiFORCE/Controller/EmployeeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OptiFORCE/src/main/java/com/OptiFORCE/OptiFORCE/Entity/Assignment.java" beforeDir="false" afterPath="$PROJECT_DIR$/OptiFORCE/src/main/java/com/OptiFORCE/OptiFORCE/Entity/Assignment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OptiFORCE/src/main/java/com/OptiFORCE/OptiFORCE/Entity/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/OptiFORCE/src/main/java/com/OptiFORCE/OptiFORCE/Entity/Employee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OptiFORCE/src/main/java/com/OptiFORCE/OptiFORCE/Entity/Project.java" beforeDir="false" afterPath="$PROJECT_DIR$/OptiFORCE/src/main/java/com/OptiFORCE/OptiFORCE/Entity/Project.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OptiFORCE/src/main/java/com/OptiFORCE/OptiFORCE/Entity/Skill.java" beforeDir="false" afterPath="$PROJECT_DIR$/OptiFORCE/src/main/java/com/OptiFORCE/OptiFORCE/Entity/Skill.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OptiFORCE/src/main/java/com/OptiFORCE/OptiFORCE/Entity/TaskLog.java" beforeDir="false" afterPath="$PROJECT_DIR$/OptiFORCE/src/main/java/com/OptiFORCE/OptiFORCE/Entity/TaskLog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OptiFORCE/src/main/java/com/OptiFORCE/OptiFORCE/Repository/AssignmentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/OptiFORCE/src/main/java/com/OptiFORCE/OptiFORCE/Repository/AssignmentRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OptiFORCE/src/main/java/com/OptiFORCE/OptiFORCE/Repository/EmployeeRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/OptiFORCE/src/main/java/com/OptiFORCE/OptiFORCE/Repository/EmployeeRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OptiFORCE/src/main/java/com/OptiFORCE/OptiFORCE/Repository/TaskLogRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/OptiFORCE/src/main/java/com/OptiFORCE/OptiFORCE/Repository/TaskLogRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OptiFORCE/src/main/java/com/OptiFORCE/OptiFORCE/Security/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/OptiFORCE/src/main/java/com/OptiFORCE/OptiFORCE/Security/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OptiFORCE/src/main/java/com/OptiFORCE/OptiFORCE/Service/AssignmentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/OptiFORCE/src/main/java/com/OptiFORCE/OptiFORCE/Service/AssignmentService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OptiFORCE/src/main/java/com/OptiFORCE/OptiFORCE/Service/EmployeeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/OptiFORCE/src/main/java/com/OptiFORCE/OptiFORCE/Service/EmployeeService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OptiFORCE/src/main/java/com/OptiFORCE/OptiFORCE/Service/ProjectService.java" beforeDir="false" afterPath="$PROJECT_DIR$/OptiFORCE/src/main/java/com/OptiFORCE/OptiFORCE/Service/ProjectService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OptiFORCE/src/main/java/com/OptiFORCE/OptiFORCE/Service/TaskLogService.java" beforeDir="false" afterPath="$PROJECT_DIR$/OptiFORCE/src/main/java/com/OptiFORCE/OptiFORCE/Service/TaskLogService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OptiFORCE/src/main/java/com/OptiFORCE/OptiFORCE/dto/OptimizationRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/OptiFORCE/src/main/java/com/OptiFORCE/OptiFORCE/dto/OptimizationRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OptiFORCE/src/main/java/com/OptiFORCE/OptiFORCE/integration/CosEngineClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/OptiFORCE/src/main/java/com/OptiFORCE/OptiFORCE/integration/CosEngineClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OptiFORCE/src/main/java/com/OptiFORCE/OptiFORCE/integration/IntegrationConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/OptiFORCE/src/main/java/com/OptiFORCE/OptiFORCE/integration/IntegrationConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OptiFORCE/src/main/java/com/OptiFORCE/OptiFORCE/integration/ProductivityClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/OptiFORCE/src/main/java/com/OptiFORCE/OptiFORCE/integration/ProductivityClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OptiFORCE/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/OptiFORCE/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,8 +40,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Class" />
         <option value="Dockerfile" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -51,37 +56,39 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.OptiForceApplication (1).executor&quot;: &quot;Run&quot;,
-    &quot;Application.OptiForceApplication.executor&quot;: &quot;Run&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;Node.js.App.jsx.executor&quot;: &quot;Run&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;Spring Boot.OptiForceApplication (1).executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.OptiForceApplication.executor&quot;: &quot;Run&quot;,
-    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;Yushi&quot;,
-    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/aayush/optiforce-front&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;settings.sync&quot;,
-    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.OptiForceApplication (1).executor": "Run",
+    "Application.OptiForceApplication.executor": "Run",
+    "Docker.docker-compose.yml.db: Compose Deployment.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Node.js.App.jsx.executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "SHELLCHECK.PATH": "/home/aayush/.local/share/JetBrains/IntelliJIdea2025.2/Shell Script/shellcheck",
+    "Spring Boot.OptiForceApplication (1).executor": "Run",
+    "Spring Boot.OptiForceApplication.executor": "Run",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "git-widget-placeholder": "Yushi",
+    "junie.onboarding.icon.badge.shown": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/home/aayush/Yushi_Programmer/SelfProjects/OPTIFORCE_",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "settings.sync",
+    "to.speed.mode.migration.done": "true",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/OptiFORCE/src/main/java/com/OptiFORCE/OptiFORCE" />
@@ -90,7 +97,7 @@
       <recent name="com.OptiFORCE.OptiFORCE.Repository" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.OptiForceApplication">
+  <component name="RunManager" selected="Docker.docker-compose.yml.db: Compose Deployment">
     <configuration name="OptiForceApplication (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.OptiFORCE.OptiFORCE.OptiForceApplication" />
       <module name="OPTIFORCE_" />
@@ -138,11 +145,35 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
+      <deployment type="docker-compose.yml" />
+      <method v="2" />
+    </configuration>
+    <configuration name="docker-compose.yml.db: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="db" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Docker.docker-compose.yml.db: Compose Deployment" />
+        <item itemvalue="Application.OptiForceApplication" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-3aa1da707db6-JavaScript-WS-252.27397.92" />
+        <option value="bundled-jdk-9823dce3aa75-bf35d07a577b-intellij.indexing.shared.core-IU-252.27397.103" />
+        <option value="bundled-js-predefined-d6986cc7102b-3aa1da707db6-JavaScript-IU-252.27397.103" />
       </set>
     </attachedChunks>
   </component>
@@ -168,6 +199,11 @@
       <workItem from="1763517617059" duration="1824000" />
       <workItem from="1763530439792" duration="820000" />
       <workItem from="1763536719940" duration="227000" />
+      <workItem from="1763562648827" duration="1156000" />
+      <workItem from="1763563829187" duration="138000" />
+      <workItem from="1763563989974" duration="299000" />
+      <workItem from="1763564310805" duration="83000" />
+      <workItem from="1763564414642" duration="5374000" />
     </task>
     <servers />
   </component>

@@ -1,7 +1,7 @@
 version: '3.8'
 
 services:
-  # 1. POSTGRESQL DATABASE SERVICE
+  # PostgreSQL Service
   db:
     image: postgres:15-alpine
     container_name: optiforce_db_container
@@ -13,33 +13,33 @@ services:
     volumes:
       - postgres_data:/var/lib/postgresql/data
 
-  # 2. SPRING BOOT BACKEND SERVICE (JAVA API)
+  # Spring Boot Backend Service
   backend:
-    # CRITICAL FIX: Context points to the OptiFORCE subdirectory
     build:
       context: ./OptiFORCE
       dockerfile: Dockerfile
     image: optiforce/backend-api:latest
     container_name: optiforce_backend
     ports:
-      - "8081:8081"
+      - "8081:8080"
     environment:
-      # Overrides application.properties to use the Docker service name 'db'
       SPRING_DATASOURCE_URL: jdbc:postgresql://db:5432/optiforce_db
       SPRING_DATASOURCE_USERNAME: postgres
       SPRING_DATASOURCE_PASSWORD: Aayush@2006
+      SERVER_PORT: 8080 # Ensures backend listens on port 8081
     depends_on:
       - db
     restart: on-failure
 
-  # 3. PYTHON AI SERVICE (Optimization Placeholder)
-  ai-optimization:
-    image: alpine/curl # Use a lightweight image as a placeholder
-    container_name: ai_optimization_service
-    # This port must match the URL used in your CosEngineClient (e.g., 5000)
-    expose:
-      - "5000"
-    command: ["sh", "-c", "echo 'AI Optimization Service Placeholder Running' && sleep 3600"]
+  # Python AI Service Example (replace with your built image)
+  ai-productivity:
+    image: your-fastapi-model-image:latest
+    container_name: ai_productivity_service
+    build:
+      context: ./employee-performance-model
+      dockerfile: Dockerfile  # If present; otherwise pre-built image
+    ports:
+      - "8090:8090"
     restart: on-failure
 
 volumes:

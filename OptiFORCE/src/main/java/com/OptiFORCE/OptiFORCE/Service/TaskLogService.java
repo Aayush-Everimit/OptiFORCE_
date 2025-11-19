@@ -6,6 +6,7 @@ import com.OptiFORCE.OptiFORCE.Repository.EmployeeRepository;
 import com.OptiFORCE.OptiFORCE.Repository.TaskLogRepository;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
+
 import java.time.LocalDateTime;
 import java.util.List;
 
@@ -25,8 +26,6 @@ public class TaskLogService {
     }
 
     public List<TaskLog> fetchLogsForAiRecalculation(Long employeeId, int days) {
-
-
         Employee employee = employeeRepository.findById(employeeId)
                 .orElseThrow(() -> new IllegalArgumentException("Employee not found for log fetch. ID: " + employeeId));
         LocalDateTime endTime = LocalDateTime.now();

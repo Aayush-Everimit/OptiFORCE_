@@ -24,7 +24,6 @@ public class ProjectService {
             EmployeeService employeeService,
             CosEngineClient cosEngineClient,
             AssignmentService assignmentService) {
-
         this.projectRepository = projectRepository;
         this.employeeService = employeeService;
         this.cosEngineClient = cosEngineClient;
@@ -51,16 +50,15 @@ public class ProjectService {
         List<Employee> allEmployees = employeeService.getAllEmployeesForOptimization();
 
         OptimizationRequest request = new OptimizationRequest(project, allEmployees);
-        List<Assignment> assignments = cosEngineClient.runOptimization(request); // Method signature changed
+        List<Assignment> assignments = cosEngineClient.runOptimization(request);
 
-        if (assignments.isEmpty()) {
+        if (assignments == null || assignments.isEmpty()) {
             throw new RuntimeException("Optimization engine returned no assignments.");
         }
 
         assignmentService.saveAssignmentsAndUpdateProjectCost(project, assignments);
         return assignments;
     }
-
 
     public List<Assignment> getProjectAssignments(Long projectId) {
         getProjectById(projectId);

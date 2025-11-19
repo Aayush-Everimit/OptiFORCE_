@@ -10,5 +10,6 @@ import java.util.List;
 
 @Repository
 public interface TaskLogRepository extends JpaRepository<TaskLog, Long> {
+
     List<TaskLog> findByEmployeeAndLogTimestampBetween(Employee employee, LocalDateTime startTime, LocalDateTime endTime);
 }

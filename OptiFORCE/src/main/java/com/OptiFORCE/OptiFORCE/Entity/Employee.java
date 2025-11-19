@@ -11,22 +11,21 @@ import java.time.LocalDate;
 @Entity
 @Getter
 @Setter
-@Table(name = "employees")
 @NoArgsConstructor
 @AllArgsConstructor
-public class Employee
-{
+@Table(name = "employees")
+public class Employee {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-
+    @Column(unique = true, nullable = false)
     private String employeeId;
+
     private String name;
     private String roleTitle;
     private String department;
     private String employmentStatus;
-
 
     private Double costPerHour;
     private Double mandatoryWorkHours;
@@ -36,4 +35,11 @@ public class Employee
     private Double liveProductivityScore;
     private Double overloadIndex;
     private Double availabilityPercent;
+
+    // For authentication
+    @Column(unique = true, nullable = false)
+    private String username;
+
+    @Column(nullable = false)
+    private String password;  // Stored as BCrypt hash
 }
