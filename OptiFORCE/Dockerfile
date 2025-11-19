@@ -9,7 +9,7 @@ WORKDIR /app
 COPY target/*.jar /app/app.jar
 
 # Expose the application port (matching server.port=8081)
-EXPOSE 8081
+EXPOSE 8080
 
 # Stage 2: Define the command that runs the application
 # ENTRYPOINT or CMD is essential for starting the application process

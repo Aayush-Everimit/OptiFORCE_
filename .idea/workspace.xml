@@ -4,7 +4,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4b89a436-4fe1-42fc-975d-e52affab77e0" name="Changes" comment="" />
+    <list default="true" id="4b89a436-4fe1-42fc-975d-e52affab77e0" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OptiFORCE-client/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/OptiFORCE-client/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OptiFORCE-client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/OptiFORCE-client/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OptiFORCE-client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/OptiFORCE-client/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OptiFORCE-client/public/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OptiFORCE-client/public/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OptiFORCE-client/public/logo192.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OptiFORCE-client/public/logo512.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OptiFORCE-client/public/manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OptiFORCE-client/public/robots.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OptiFORCE-client/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/OptiFORCE-client/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OptiFORCE-client/src/App.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OptiFORCE-client/src/App.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OptiFORCE-client/src/App.test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OptiFORCE-client/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/OptiFORCE-client/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OptiFORCE-client/src/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OptiFORCE-client/src/logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OptiFORCE-client/src/reportWebVitals.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OptiFORCE-client/src/setupTests.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OptiFORCE/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/OptiFORCE/Dockerfile" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -35,6 +56,7 @@
     &quot;Application.OptiForceApplication (1).executor&quot;: &quot;Run&quot;,
     &quot;Application.OptiForceApplication.executor&quot;: &quot;Run&quot;,
     &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;Node.js.App.jsx.executor&quot;: &quot;Run&quot;,
     &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
     &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
     &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
@@ -49,7 +71,7 @@
     &quot;git-widget-placeholder&quot;: &quot;Yushi&quot;,
     &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/aayush/Yushi_Programmer/SelfProjects/OPTIFORCE_&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/aayush/optiforce-front&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -68,7 +90,7 @@
       <recent name="com.OptiFORCE.OptiFORCE.Repository" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.OptiForceApplication">
+  <component name="RunManager" selected="Application.OptiForceApplication">
     <configuration name="OptiForceApplication (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.OptiFORCE.OptiFORCE.OptiForceApplication" />
       <module name="OPTIFORCE_" />
@@ -116,19 +138,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Application.OptiForceApplication" />
-        <item itemvalue="Spring Boot.OptiForceApplication (1)" />
-        <item itemvalue="Application.OptiForceApplication (1)" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9823dce3aa75-bf35d07a577b-intellij.indexing.shared.core-IU-252.27397.103" />
-        <option value="bundled-js-predefined-d6986cc7102b-3aa1da707db6-JavaScript-IU-252.27397.103" />
+        <option value="bundled-js-predefined-d6986cc7102b-3aa1da707db6-JavaScript-WS-252.27397.92" />
       </set>
     </attachedChunks>
   </component>
@@ -151,7 +165,9 @@
       <workItem from="1763516339459" duration="465000" />
       <workItem from="1763517382150" duration="54000" />
       <workItem from="1763517448213" duration="156000" />
-      <workItem from="1763517617059" duration="1002000" />
+      <workItem from="1763517617059" duration="1824000" />
+      <workItem from="1763530439792" duration="820000" />
+      <workItem from="1763536719940" duration="227000" />
     </task>
     <servers />
   </component>
