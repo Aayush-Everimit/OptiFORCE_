@@ -1,168 +1,70 @@
-# OptiForce: AI Workforce Management, Hiring, and Optimization Platform
+# Getting Started with Create React App
 
-## Ingenious Minds Behind This Project
-- [AI Specialists-Dev Verma and Mayank Choubey]
-- [Frontend Developers- Anmol Upadhyay and Yuvika Juneja]
-- [Backend Developer- Aayush Gautam]
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Available Scripts
 
-## 1. Concept
+In the project directory, you can run:
 
-**OptiForce** is a unified, AI-powered **Workforce Intelligence Platform** that:
+### `npm start`
 
-- Monitors employee productivity, engagement, and availability.
-- Recommends optimal staffing (internal employees or new hires) for projects.
-- Optimizes project costs, timelines, and resource allocation.
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The platform leverages AI models wherever required for performance calculation, predictive staffing, and cost optimization.
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
----
+### `npm test`
 
-## 2. Core Problem
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-Companies face challenges such as:
+### `npm run build`
 
-- **Underutilized talent:** Good employees remain idle while new hires are recruited.  
-- **Poor visibility:** Managers cannot accurately assess workloads or engagement.  
-- **Cost inefficiency:** Hidden losses from hiring, overtime, and delays.  
-- **Unclear staffing decisions:** Lack of data-driven assignment of employees to projects.  
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
----
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-## 3. Solution Overview
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-OptiForce integrates **Employee Monitoring**, **Project Staffing Recommendation**, and **Cost Optimization** into one intelligent platform.
+### `npm run eject`
 
-### Core Components
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-| Module                           | Function                                                                 |
-|---------------------------------|-------------------------------------------------------------------------|
-| **Performance Monitor**          | Tracks productivity, deadlines, work hours, and engagement.             |
-| **Skill & Role Profiler**        | Maps employees’ skills, experience, and project history.               |
-| **Project Matcher**              | Recommends employees for projects based on skill, availability, and cost. |
-| **Cost Optimizer (COS Engine)**  | Suggests the most cost-effective team while maintaining project quality.|
-| **Predictive Workforce Planner** | Forecasts staffing gaps and recommends internal transfers or hires.    |
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
----
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-## 4. System Workflow
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-**Step 1: Continuous Monitoring**  
-Track employee task completion, hours, overtime, idle time, and engagement trends.
+## Learn More
 
-**Step 2: Skill & Workload Profiling**  
-AI builds live profiles including skill score, productivity trend, availability percentage, and cost per hour.
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-**Step 3: New Project Requirement**  
-Manager inputs project name, required skills, budget, and timeline.
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-**Step 4: AI Recommendation**  
-- Identifies internal employees matching skill, availability, and cost constraints.  
-- Suggests external hires if no internal match exists.  
+### Code Splitting
 
-**Step 5: Cost Optimization**  
-COS Engine simulates multiple staffing options and recommends the most efficient team composition.
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
----
+### Analyzing the Bundle Size
 
-## 5. Example Use Case
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-**Scenario:** Project “Orion” requires 2 frontend developers and 1 project manager.
+### Making a Progressive Web App
 
-**OptiForce Output:**  
-- 2 internal employees identified with 90% skill match and low workload.  
-- 1 overloaded PM detected → recommends 1 external PM (85% fit, $60/hr).  
-- Optimized team:  
-> “Use Alice & Rohan internally; hire John externally — 28% cost reduction, 92% skill coverage.”
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
----
+### Advanced Configuration
 
-## 6. Dashboard Highlights
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-**Employee Insights Tab**  
-- Productivity trends  
-- Idle / overtime hours  
-- Skill utilization heatmap  
-- Engagement alerts  
+### Deployment
 
-**Project Staffing Tab**  
-- Input new project requirements  
-- Internal candidate recommendations  
-- Predicted project cost  
-- “What-if” optimization scenarios  
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-**Cost Dashboard**  
-- Department-wise cost per output  
-- Hiring vs training cost comparison  
-- Resource efficiency index  
+### `npm run build` fails to minify
 
----
-
-## 7. Tech Stack
-
-| Layer                 | Technology                                 |
-|-----------------------|-------------------------------------------|
-| Frontend              | Tailwind CSS,Streamlit/React + Chart.js/Plotly|
-| Backend               | Java(SpringBoot)                          |
-| Database              | PostgreSQL / SQLite/Mongo DB              |
-| Data Processing       | pandas, NumPy                             |
-| AI & ML Models        | scikit-learn (regression, classification) |
-| Optimization Engine   | PuLP or OR-Tools                          |
-| Integrations          | Jira API, Slack API, HR CSV upload        |
-
----
-
-## 8. ML & Optimization Concepts
-
-| Model               | Purpose                                                      |
-|--------------------|--------------------------------------------------------------|
-| Regression          | Predict project delays based on workload                     |
-| Clustering          | Identify employee work patterns (overloaded, idle, efficient) |
-| Recommender         | Match employees to project needs                             |
-| Linear Programming  | Optimize team selection under skill and cost constraints     |
-| Anomaly Detection   | Flag sudden drops in performance or engagement               |
-
----
-
-## 9. Smart Features
-
-| Feature                   | Benefit                                                   |
-|----------------------------|----------------------------------------------------------|
-| Auto Alerts                | Warn if project team is overloaded                        |
-| Productivity Analytics     | Detect drop in employee efficiency                        |
-| AI Recruiter Mode          | Suggests new hires only when internal talent is insufficient |
-| Chat Assistant             | Recommend optimal employees for project requirements      |
-| Wellness Tracker           | Detect burnout and recommend workload adjustments        |
-| Productivity-to-Cost Ratio | Identify high ROI employees                                 |
-
----
-
-## 11. Monetization / Startup Model
-
-- **SaaS pricing per employee/month**  
-- **Enterprise analytics reports** (premium)  
-- **HR tool integrations** (Workday, SAP, Jira)  
-- **White-label solutions for consulting firms**
-
----
-
-## 12. Extra Angles for Hackathon
-
-- ESG-friendly: optimize cost without layoffs by reassigning talent  
-- Gamified employee insights: track productivity & training suggestions  
-- Privacy-focused: anonymized employee monitoring  
-- Predictive hiring: anticipate skill needs in advance  
-
----
-
-## 13. Client-Side Features
-
-- Billing and invoicing  
-- Extra hours tracking and billable computation  
-
----
-
-## 14. Productivity & AI
-
-- Employee productivity will be calculated using AI models.  
-- Heavy use of AI in performance monitoring, staffing recommendations, cost optimization, and predictive workforce planning.  
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
