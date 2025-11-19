@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4b89a436-4fe1-42fc-975d-e52affab77e0" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/OPTIFORCE_.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/OPTIFORCE_.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OptiFORCE-client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/OptiFORCE-client/package-lock.json" afterDir="false" />
-    </list>
+    <list default="true" id="4b89a436-4fe1-42fc-975d-e52affab77e0" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -155,7 +151,7 @@
       <workItem from="1763516339459" duration="465000" />
       <workItem from="1763517382150" duration="54000" />
       <workItem from="1763517448213" duration="156000" />
-      <workItem from="1763517617059" duration="679000" />
+      <workItem from="1763517617059" duration="1002000" />
     </task>
     <servers />
   </component>
